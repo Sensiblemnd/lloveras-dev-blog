@@ -1,0 +1,12 @@
+{
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
