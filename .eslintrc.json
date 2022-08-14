@@ -1,14 +1,3 @@
 {
-  "extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended"],
-  "plugins": ["react", "react-hooks", "@typescript-eslint"],
-  "parser": "@typescript-eslint/parser",
-  "rules": {
-    "linebreak-style": "off",
-    "prettier/prettier": [
-      "error",
-      {
-        "endOfLine": "auto"
-      }
-    ]
-  }
+  "extends": "next"
 }
