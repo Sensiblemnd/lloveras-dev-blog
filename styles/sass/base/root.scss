@@ -1,0 +1,38 @@
+:root {
+  /* COLORS */
+  --MainBackgroundColor: #0b0837;
+  --BackgroundColor: #0b0837; /* Set to [transparent |  ] */
+  --black: #151515;
+  --darkgrey: #1e1e1f;
+  --grey: #2e2e2f;
+  --lightgrey: #3e3e3f;
+  --white: #fff;
+  --purple: #6624e2;
+  --green: #3f0;
+  --blue: #06f;
+  --pink: #f0f;
+  --red: #f00;
+  --orange: #f60;
+  --yellow: #ff0;
+  --invisibleGrey: rgba(62, 62, 62, 0.24);
+  --invisibleBlack: rgba(0, 0, 0, 0);
+
+  /*********************************
+   Text
+  *********************************/
+
+  --FontSize: 15px; /* The size of the font */
+  --Font: 'Motiva Sans', Arial, Helvetica, sans-serif; /* Any font on the system */
+  --FontStyle: uppercase; /* Set to [lowercase | uppercase | none ] */
+  --LetterSpacing: 3px; /* Set 3px or more ] */
+
+  /*********************************
+   BLUR AMOUNT ( Lower > Better )
+  ********************************
+   Blur turned off by default, to turn on; set FlatColor to none, and switch everything on. */
+  --FlatColor: #1e1e1f; /* Set to [none | color ] */
+  --Blur: blur(0); /* Set to [0px | Low PC ( 10px ) | High PC ( > 20px ) ] */
+  --BackgroundBlur: none; /* Set to [none | flex ] */
+  --ImageBlur: visible; /* Set to [hidden | visible ] */
+  --ImageHeight: 320px; /* Set to [0px > 462px ] */
+}

@@ -1,0 +1,10 @@
+.social-icons {
+  svg {
+    fill: var(--white);
+  }
+  a:hover {
+    svg {
+      fill: #ffde00;
+    }
+  }
+}
