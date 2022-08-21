@@ -1,6 +1,12 @@
 import type Author from "./author"
 
-export type ImageGalleryType = { imageUrl: string; linkUrl: string; altText: string }
+export type ImageGalleryType = {
+  imageUrl: string
+  linkUrl?: string
+  altText?: string
+  imageWidth?: number
+  imageHeight?: number
+}
 
 type PostType = {
   slug: string
