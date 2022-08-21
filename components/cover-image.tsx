@@ -1,5 +1,7 @@
-import cn from 'classnames'
-import Link from 'next/link'
+import cn from "classnames"
+import Image from "next/image"
+import Link from "next/link"
+import useDimensions from "react-cool-dimensions"
 
 type Props = {
   title: string
@@ -8,14 +10,23 @@ type Props = {
 }
 
 const CoverImage = ({ title, src, slug }: Props) => {
+  const { observe, width } = useDimensions<HTMLDivElement | null>()
+
   const image = (
-    <img
-      src={src}
-      alt={`Cover Image for ${title}`}
-      className={cn('shadow-sm', {
-        'hover:shadow-lg transition-shadow duration-200': slug,
-      })}
-    />
+    <div ref={observe}>
+      <Image
+        src={src}
+        layout="responsive"
+        width={width}
+        height={Math.round(width * 0.5625)}
+        objectFit="cover"
+        sizes={`(max-width: ${width}px) 100vw, ${width}px`}
+        alt={`Cover Image for ${title}`}
+        className={cn("shadow-sm", {
+          "hover:shadow-lg transition-shadow duration-200": slug,
+        })}
+      />
+    </div>
   )
   return (
     <div className="sm:mx-0">

@@ -3,6 +3,7 @@ import Head from "next/head"
 import { useRouter } from "next/router"
 import Container from "../../components/container"
 import Header from "../../components/header"
+import { ImageGallery } from "../../components/image-gallery"
 import Layout from "../../components/layout"
 import PostBody from "../../components/post-body"
 import PostHeader from "../../components/post-header"
@@ -43,6 +44,7 @@ export default function Post({ post, preview }: Props) {
                 date={post.date}
                 author={post.author}
               />
+              {post?.imageGallery && <ImageGallery images={post?.imageGallery}></ImageGallery>}
               <PostBody content={post.content} />
             </article>
           </>
@@ -60,13 +62,14 @@ type Params = {
 
 export async function getStaticProps({ params }: Params) {
   const post = getPostBySlug(params.slug, [
-    "title",
-    "date",
-    "slug",
     "author",
     "content",
-    "ogImage",
     "coverImage",
+    "date",
+    "imageGallery",
+    "ogImage",
+    "slug",
+    "title",
   ])
   const content = await markdownToHtml(post.content || "")
 

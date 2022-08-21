@@ -1,4 +1,6 @@
-import type Author from './author'
+import type Author from "./author"
+
+export type ImageGalleryType = { imageUrl: string; linkUrl: string; altText: string }
 
 type PostType = {
   slug: string
@@ -11,6 +13,7 @@ type PostType = {
     url: string
   }
   content: string
+  imageGallery?: ImageGalleryType[]
 }
 
 export default PostType
