@@ -1,10 +1,10 @@
-import Head from "next/head";
-import Container from "../components/container";
-import Header from "../components/header";
-import Layout from "../components/layout";
-import { CMS_NAME } from "../lib/constants";
+import Head from "next/head"
+import Container from "../components/container"
+import Header from "../components/header"
+import Layout from "../components/layout"
+import { CMS_NAME } from "../lib/constants"
 const test = () => {
-  const blogTitle = `Next.js Blog Example with ${CMS_NAME}`;
+  const blogTitle = `Next.js Blog Example with ${CMS_NAME}`
   return (
     <>
       <Layout>
@@ -17,7 +17,7 @@ const test = () => {
         </Container>
       </Layout>
     </>
-  );
-};
+  )
+}
 
-export default test;
+export default test

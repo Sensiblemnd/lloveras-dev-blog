@@ -1,5 +1,4 @@
 import cn from "classnames"
-import Image from "next/image"
 import Link from "next/link"
 import useDimensions from "react-cool-dimensions"
 
@@ -14,13 +13,9 @@ const CoverImage = ({ title, src, slug }: Props) => {
 
   const image = (
     <div ref={observe}>
-      <Image
+      <img
         src={src}
-        layout="responsive"
-        width={width}
-        height={Math.round(width * 0.5625)}
-        objectFit="cover"
-        sizes={`(max-width: ${width}px) 100vw, ${width}px`}
+        sizes={`(max-width: ${width}px) 50vw, ${width}px`}
         alt={`Cover Image for ${title}`}
         className={cn("shadow-sm", {
           "hover:shadow-lg transition-shadow duration-200": slug,
