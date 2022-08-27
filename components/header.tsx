@@ -1,16 +1,17 @@
-import Link from "next/link";
-import { GithubIcon } from "./icons/github";
-import { LinkedinIcon } from "./icons/linkedin";
-import { TwitterIcon } from "./icons/twitter";
+import { GithubIcon } from "./icons/github"
+import { LinkedinIcon } from "./icons/linkedin"
+import { TwitterIcon } from "./icons/twitter"
+import Menu from "./menu"
 
 const Header = () => {
   return (
     <header className="flex flex-row items-center justify-between mb-[15px]">
       <h1 className="text-2xl font-bold leading-tight tracking-tight md:text-6xl md:tracking-tighter">
-        <Link href="/">
+        {/* <Link href="/">
           <a className="hover:underline">Lloveras.dev</a>
-        </Link>
+        </Link> */}
       </h1>
+      <Menu />
       <div className="social-icons">
         <div className="flex gap-5">
           <span>Social:</span>
@@ -32,9 +33,7 @@ const Header = () => {
               rel="noopener noreferrer"
             >
               <LinkedinIcon />
-              <span className="sr-only">
-                View Rob Lloveras profile on LinkedIn
-              </span>
+              <span className="sr-only">View Rob Lloveras profile on LinkedIn</span>
             </a>
 
             <a
@@ -44,15 +43,13 @@ const Header = () => {
               rel="noopener noreferrer"
             >
               <GithubIcon />
-              <span className="sr-only">
-                View Sensiblemnd’s profile on GitHub
-              </span>
+              <span className="sr-only">View Sensiblemnd’s profile on GitHub</span>
             </a>
           </span>
         </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

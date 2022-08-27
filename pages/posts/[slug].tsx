@@ -44,8 +44,8 @@ export default function Post({ post, preview }: Props) {
                 date={post.date}
                 author={post.author}
               />
-              {post?.imageGallery && <ImageGallery images={post?.imageGallery}></ImageGallery>}
               <PostBody content={post.content} />
+              {post?.imageGallery && <ImageGallery images={post?.imageGallery}></ImageGallery>}
             </article>
           </>
         )}
