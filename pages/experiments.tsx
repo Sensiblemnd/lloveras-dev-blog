@@ -14,7 +14,7 @@ const test = () => {
         </Head>
         <Container>
           <Header />
-          <div>test</div>
+          <div>experiments</div>
         </Container>
       </Layout>
     </>

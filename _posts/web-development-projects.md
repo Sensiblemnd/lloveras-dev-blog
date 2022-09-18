@@ -1,4 +1,13 @@
 ---
+title: "Latest Web Development Projects"
+excerpt: "Latest Web development Projects. Includes Vistar.com, pfgc.com, bankatfirst.com ..."
+coverImage: "/code-background.jpg"
+date: "2022-08-14 21:50:21"
+author:
+  name: Rob Lloveras
+  picture: "/roberto-character.png"
+ogImage:
+  url: "/websites/vistar.jpg"
 imageGallery:
   [
     {
@@ -33,15 +42,6 @@ imageGallery:
       imageWidth: "216",
     },
   ]
-title: "Web Development Projects"
-excerpt: "Latest Web development Projects"
-coverImage: "/assets/blog/hello-world/cover.jpg"
-date: "2022-08-14 21:50:21"
-author:
-  name: Rob Lloveras
-  picture: "/roberto-character.png"
-ogImage:
-  url: "/websites/vistar.jpg"
 ---
 
 Latest web development sites

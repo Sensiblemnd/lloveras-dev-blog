@@ -6,11 +6,7 @@ import Menu from "./menu"
 const Header = () => {
   return (
     <header className="flex flex-row items-center justify-between mb-[15px]">
-      <h1 className="text-2xl font-bold leading-tight tracking-tight md:text-6xl md:tracking-tighter">
-        {/* <Link href="/">
-          <a className="hover:underline">Lloveras.dev</a>
-        </Link> */}
-      </h1>
+      <h1 className="text-2xl font-bold leading-tight tracking-tight md:text-6xl md:tracking-tighter"></h1>
       <Menu />
       <div className="social-icons">
         <div className="flex gap-5">

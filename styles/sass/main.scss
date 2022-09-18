@@ -1,5 +1,6 @@
 @use "./base/root";
 @use "./components/social-icons";
+@use "gooey-menu.scss";
 
 body {
   background-color: var(--MainBackgroundColor);

@@ -11,16 +11,6 @@ export const Menu = () => {
         </li>
 
         <li>
-          <Link href="/test">
-            <a className="text-shadow">Test</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/work">
-            <a className="text-shadow">Work</a>
-          </Link>
-        </li>
-        <li>
           <Link href="/experiments">
             <a className="text-shadow">CSS Experiments</a>
           </Link>

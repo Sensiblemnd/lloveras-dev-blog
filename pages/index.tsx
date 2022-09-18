@@ -40,7 +40,7 @@ export default function Index({ allPosts }: Props) {
     </>
   )
 }
-
+// comments?
 export const getStaticProps = async () => {
   const allPosts = getAllPosts([
     "author",
