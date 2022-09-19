@@ -15,6 +15,12 @@ export const Menu = () => {
             <a className="text-shadow">CSS Experiments</a>
           </Link>
         </li>
+
+        <li>
+          <Link href="/codepen">
+            <a className="text-shadow">Codepen Experiments</a>
+          </Link>
+        </li>
       </ul>
     </nav>
   )

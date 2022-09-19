@@ -24,8 +24,10 @@ const CodePen = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <h1>Codepen Experiments</h1>
-            <div className="grid w-full grid-flow-row gap-6 p-16 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <h1 className="mb-10 text-2xl font-bold leading-tight tracking-tighter text-center md:text-3xl lg:text-4xl md:leading-none md:text-left">
+              Codepen Experiments
+            </h1>
+            <div className="grid w-full grid-flow-row gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               <DynamicCodePenIframe height={500} title="Codepen Experiment" penUrlKey="VjMmEX" />
               <DynamicCodePenIframe height={500} title="Codepen Experiment" penUrlKey="gpaJww" />
               <DynamicCodePenIframe height={500} title="Codepen Experiment" penUrlKey="KwgQWJ" />

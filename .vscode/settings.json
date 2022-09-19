@@ -3,7 +3,8 @@
     "*.css": "postcss"
   },
   "emmet.includeLanguages": {
-    "postcss": "css"
+    "postcss": "css",
+    "markdown": "html"
   },
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
