@@ -9,7 +9,8 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build  && next export"
   },
   "dependencies": {
     "-": "^0.0.1",

@@ -10,14 +10,13 @@ type Props = {
 
 const CoverImage = ({ title, src, slug }: Props) => {
   const { observe, width } = useDimensions<HTMLDivElement | null>()
-
   const image = (
     <div ref={observe}>
       <img
         src={src}
-        sizes={`(max-width: ${width}px) 50vw, ${width}px`}
+        sizes={`(max-width: ${width}px) 50v w, ${width}px`}
         alt={`Cover Image for ${title}`}
-        className={cn("shadow-sm", {
+        className={cn("shadow-sm cover-image", {
           "hover:shadow-lg transition-shadow duration-200": slug,
         })}
       />
