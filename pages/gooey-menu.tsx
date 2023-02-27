@@ -4,8 +4,8 @@ import Header from "../components/header"
 import Layout from "../components/layout"
 import { CMS_NAME } from "../lib/constants"
 
-const test = () => {
-  const blogTitle = `Next.js Blog Example with ${CMS_NAME}`
+const GooeyMenu = () => {
+  const blogTitle = `${CMS_NAME}`
   return (
     <>
       <Layout>
@@ -46,11 +46,22 @@ const test = () => {
               </ul>
             </nav>
           </div>
-          <code>asdf asdf</code>
+          <code datatype="sass">
+            <pre>{`
+            .gooey {
+              position: relative;
+              width: 100%;
+              height: 100%;
+              background: #fff;
+              overflow: hidden;
+            }
+
+            `}</pre>
+          </code>
         </Container>
       </Layout>
     </>
   )
 }
 
-export default test
+export default GooeyMenu
