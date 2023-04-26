@@ -1,6 +1,7 @@
 @use "./base/root";
 @use "./components/social-icons";
 @use "gooey-menu.scss";
+@use "./components/prism-dracula";
 
 body {
   background-color: var(--MainBackgroundColor);

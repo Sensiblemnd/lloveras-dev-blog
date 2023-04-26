@@ -11,8 +11,8 @@ export const Menu = () => {
         </li>
 
         <li>
-          <Link href="/experiments">
-            <a className="text-shadow">CSS Experiments</a>
+          <Link href="/gooey-menu">
+            <a className="text-shadow">Gooey Menu </a>
           </Link>
         </li>
 

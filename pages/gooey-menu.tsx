@@ -2,7 +2,9 @@ import Head from "next/head"
 import Container from "../components/container"
 import Header from "../components/header"
 import Layout from "../components/layout"
+import { ReactPrismjs } from "../components/react-prismjs"
 import { CMS_NAME } from "../lib/constants"
+import { gooeyMenuScss } from "./common/gooey-,enu-scss"
 
 const GooeyMenu = () => {
   const blogTitle = `${CMS_NAME}`
@@ -46,18 +48,8 @@ const GooeyMenu = () => {
               </ul>
             </nav>
           </div>
-          <code datatype="sass">
-            <pre>{`
-            .gooey {
-              position: relative;
-              width: 100%;
-              height: 100%;
-              background: #fff;
-              overflow: hidden;
-            }
-
-            `}</pre>
-          </code>
+          <h2 className="p-6">SCSS</h2>
+          <ReactPrismjs language="css" source={gooeyMenuScss} />
         </Container>
       </Layout>
     </>
