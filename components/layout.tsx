@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import Footer from "./footer"
 import Meta from "./meta"
 
@@ -10,8 +11,16 @@ const Layout = ({ children }: Props) => {
   return (
     <>
       <Meta />
-      <div className="min-h-screen">
-        <main>{children}</main>
+      <div className="min-h-screen  min-w-[320px]">
+        <motion.div
+          layout
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.7 }}
+        >
+          <main>{children}</main>
+        </motion.div>
       </div>
       <Footer />
     </>

@@ -1,14 +1,44 @@
+import classNames from "classnames"
+import { useRef, useState } from "react"
+import { useOnClickOutside, useWindowSize } from "usehooks-ts"
 import { GithubIcon } from "./icons/github"
 import { LinkedinIcon } from "./icons/linkedin"
 import { TwitterIcon } from "./icons/twitter"
 import Menu from "./menu"
 
 const Header = () => {
+  const { width } = useWindowSize()
+
+  //useState isOpen
+  const [isOpen, setIsOpen] = useState(false)
+  const ref = useRef(null)
+
+  const handleClickOutside = () => {
+    if (width <= 1024) {
+      setIsOpen(!isOpen)
+    }
+  }
+
+  const handleClickInside = () => {
+    if (width > 1024) {
+      setIsOpen(false)
+    }
+  }
+  useOnClickOutside(ref, handleClickOutside)
+
+  const defaultClasses = `fixed top-0 left-0 z-40 w-64 h-screen transition-transform lg:relative lg:h-auto lg:w-auto lg:flex lg:flex-row lg:items-center lg:justify-between lg:mb-[15px] lg:bg-transparent bg-black lg:translate-x-0`
   return (
-    <header className="flex flex-row items-center justify-between mb-[15px]">
+    <header
+      className={classNames(defaultClasses, {
+        "-translate-x-full": !isOpen,
+      })}
+      ref={ref}
+      onClick={handleClickInside}
+    >
       <h1 className="text-2xl font-bold leading-tight tracking-tight md:text-6xl md:tracking-tighter"></h1>
+
       <Menu />
-      <div className="social-icons">
+      <div className="social-icons pl-3 lg:pl-[revert]">
         <div className="flex gap-5">
           <span>Social:</span>
           <span className="flex gap-5 ">

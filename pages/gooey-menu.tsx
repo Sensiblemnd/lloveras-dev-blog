@@ -1,10 +1,10 @@
 import Head from "next/head"
+import { gooeyMenuScss } from "../common/gooey-menu-scss"
 import Container from "../components/container"
 import Header from "../components/header"
 import Layout from "../components/layout"
 import { ReactPrismjs } from "../components/react-prismjs"
 import { CMS_NAME } from "../lib/constants"
-import { gooeyMenuScss } from "./common/gooey-,enu-scss"
 
 const GooeyMenu = () => {
   const blogTitle = `${CMS_NAME}`

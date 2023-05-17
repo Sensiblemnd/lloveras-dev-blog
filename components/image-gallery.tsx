@@ -22,12 +22,14 @@ export const ImageGallery = ({ images }: ImageGalleryProps) => {
                   className="link-item"
                   title={image.altText}
                 >
-                  <img
-                    key={image.imageUrl}
-                    src={image.imageUrl}
-                    alt={image.altText}
-                    className={`w-[${image?.imageWidth}px]  h-[${image?.imageHeight}px]`}
-                  />
+                  <picture>
+                    <img
+                      key={image.imageUrl}
+                      src={image.imageUrl}
+                      alt={image.altText}
+                      className={`w-[${image?.imageWidth}px]  h-[${image?.imageHeight}px]`}
+                    />
+                  </picture>
                 </a>
               </Link>
             </div>
@@ -38,12 +40,14 @@ export const ImageGallery = ({ images }: ImageGalleryProps) => {
               className="flex items-center justify-center px-2 cursor-pointer"
               key={`${image.imageUrl}-${image.linkUrl} `}
             >
-              <img
-                key={image.imageUrl}
-                src={image.imageUrl}
-                alt={image.altText}
-                className={`w-[${image?.imageWidth}px]  h-[${image?.imageHeight}px]`}
-              />
+              <picture>
+                <img
+                  key={image.imageUrl}
+                  src={image.imageUrl}
+                  alt={image.altText}
+                  className={`w-[${image?.imageWidth}px]  h-[${image?.imageHeight}px]`}
+                />
+              </picture>
             </div>
           )
         }
