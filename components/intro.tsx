@@ -1,11 +1,11 @@
-import Header from "./header";
+import Drawer from "./drawer"
 
 const Intro = () => {
   return (
     <section className="">
-      <Header />
+      <Drawer />
     </section>
-  );
-};
+  )
+}
 
-export default Intro;
+export default Intro

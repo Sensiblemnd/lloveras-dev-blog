@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import Head from "next/head"
 import CodePenIframe from "../components/codepen-iframe"
 import Container from "../components/container"
-import Header from "../components/header"
+import Drawer from "../components/drawer"
 import Layout from "../components/layout"
 import { CODEPENIDS } from "../lib/constants"
 
@@ -18,7 +18,7 @@ const CodePen = () => {
           <title>Codepen</title>
         </Head>
         <Container>
-          <Header />
+          <Drawer />
 
           <h1 className="mb-10 text-2xl font-bold leading-tight tracking-tighter text-center md:text-3xl lg:text-4xl md:leading-none md:text-left">
             Codepen Experiments

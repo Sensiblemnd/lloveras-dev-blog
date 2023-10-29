@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Container from "../components/container"
-import Header from "../components/header"
+import Drawer from "../components/drawer"
 import Layout from "../components/layout"
 import { CMS_NAME } from "../lib/constants"
 
@@ -13,7 +13,7 @@ const test = () => {
           <title>{blogTitle}</title>
         </Head>
         <Container>
-          <Header />
+          <Drawer />
           <div>test</div>
         </Container>
       </Layout>

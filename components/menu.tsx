@@ -12,10 +12,36 @@ const Li = ({ children }: Props) => {
   )
 }
 
-export const Menu = () => {
+type MenuProps = {
+  setIsOpen?: React.Dispatch<React.SetStateAction<boolean>>
+  isOpen?: boolean
+}
+
+export const Menu = ({ setIsOpen, isOpen }: MenuProps) => {
+  const handleIsOpenMenu = () => {
+    setIsOpen && setIsOpen(!isOpen)
+  }
+
   return (
-    <nav className="w-full ">
-      <ul className="flex flex-col py-4 lg:grid lg:justify-start lg:grid-flow-col lg:gap-5 lg:shadow-black">
+    <nav className="w-full gap-4 ">
+      <div className="flex-none lg:hidden md:hidden">
+        <button className="btn btn-square btn-ghost" onClick={handleIsOpenMenu}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            className="inline-block w-5 h-5 stroke-current"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <ul className="flex flex-row hidden gap-4 py-4 lg:flex md:flex ">
         <Li>
           <Link href="/">
             <a className="text-shadow">Home</a>

@@ -1,11 +1,11 @@
 import Head from "next/head"
 import Container from "../components/container"
-import Header from "../components/header"
+import Drawer from "../components/drawer"
 import Layout from "../components/layout"
 import { CMS_NAME } from "../lib/constants"
 
 const test = () => {
-  const blogTitle = `Next.js Blog Example with ${CMS_NAME}`
+  const blogTitle = `lloveras ${CMS_NAME}`
   return (
     <>
       <Layout>
@@ -13,7 +13,7 @@ const test = () => {
           <title>{blogTitle}</title>
         </Head>
         <Container>
-          <Header />
+          <Drawer />
           <div>experiments</div>
         </Container>
       </Layout>
