@@ -6,7 +6,6 @@ import Layout from "../components/layout"
 import MoreStories from "../components/more-stories"
 import Post from "../interfaces/post"
 import { getAllPosts } from "../lib/api"
-import { CMS_NAME } from "../lib/constants"
 
 type Props = {
   allPosts: Post[]
@@ -15,7 +14,7 @@ type Props = {
 export default function Index({ allPosts }: Props) {
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
-  const title = `Next.js Blog Example with ${CMS_NAME}`
+  const title = `Rob Lloveras Blog`
   return (
     <>
       <Layout>
