@@ -24,7 +24,7 @@ export default function Post({ post, preview }: Props) {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
-  const title = `${post.title} | Next.js Blog Example with ${CMS_NAME}`
+  const title = `${post.title} | ${CMS_NAME}`
   return (
     <Layout preview={preview}>
       <Container>

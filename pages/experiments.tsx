@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import { CMS_NAME } from "../lib/constants"
 
 const test = () => {
-  const blogTitle = `lloveras ${CMS_NAME}`
+  const blogTitle = ` ${CMS_NAME}`
   return (
     <>
       <Layout>

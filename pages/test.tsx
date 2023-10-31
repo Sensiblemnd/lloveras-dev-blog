@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import { CMS_NAME } from "../lib/constants"
 
 const test = () => {
-  const blogTitle = `Next.js Blog Example with ${CMS_NAME}`
+  const blogTitle = `${CMS_NAME}`
   return (
     <>
       <Layout>
