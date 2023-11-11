@@ -1,4 +1,8 @@
 import { motion } from "framer-motion"
+import Head from "next/head"
+import Container from "../components/container"
+import Drawer from "../components/drawer"
+import { CMS_NAME } from "../lib/constants"
 import Footer from "./footer"
 import Meta from "./meta"
 
@@ -8,6 +12,8 @@ type Props = {
 }
 
 const Layout = ({ children }: Props) => {
+  const blogTitle = ` ${CMS_NAME}`
+
   return (
     <>
       <Meta />
@@ -19,7 +25,15 @@ const Layout = ({ children }: Props) => {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <main>{children}</main>
+          <main>
+            <Head>
+              <title>{blogTitle}</title>
+            </Head>
+            <Container>
+              <Drawer />
+              {children}
+            </Container>
+          </main>
         </motion.div>
       </div>
       <Footer />
