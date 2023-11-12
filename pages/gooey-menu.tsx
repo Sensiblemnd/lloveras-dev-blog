@@ -2,10 +2,8 @@ import { gooeyMenuScss } from "../common/gooey-menu-scss"
 import { GooeyNav } from "../components/gooey-nav"
 import Layout from "../components/layout"
 import { ReactPrismjs } from "../components/react-prismjs"
-import { CMS_NAME } from "../lib/constants"
 
 const GooeyMenu = () => {
-  const blogTitle = `${CMS_NAME}`
   return (
     <>
       <Layout>
