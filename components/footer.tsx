@@ -37,14 +37,15 @@ const Footer = () => {
           <span className="sr-only">View Sensiblemnd’s profile on GitHub</span>
         </a>
       </div>
-      <Script id="google-analytics">
-        {`
-          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-          ga('create', 'G-7HV07LFK0N', 'auto');
-          ga('send', 'pageview');
-        `}
-      </Script>
-      <Script src="https://www.google-analytics.com/analytics.js" />
+
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-7HV07LFK0N" />
+      <script>
+        {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7HV07LFK0N');`}
+      </script>
     </footer>
   )
 }
