@@ -2,7 +2,7 @@
   --padding: 16px;
   --radius: 50px;
   --demo-width: min(20em, 80vw);
-
+  position: relative;
   &-outer {
     background: hsl(275, 95%, 60%);
     display: grid;
@@ -13,6 +13,22 @@
   }
 
   &-inner {
+    background: hsl(220, 30%, 85%);
+    border-radius: calc(var(--radius) - var(--padding));
+  }
+
+  &::before {
+    content: "";
+    background: hsl(275, 95%, 60%);
+    display: grid;
+    place-items: stretch;
+    padding: var(--padding);
+    border-radius: var(--radius);
+    height: 100%;
+  }
+
+  &::after {
+    content: "";
     background: hsl(220, 30%, 85%);
     border-radius: calc(var(--radius) - var(--padding));
   }

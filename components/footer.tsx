@@ -37,15 +37,18 @@ const Footer = () => {
           <span className="sr-only">View Sensiblemnd’s profile on GitHub</span>
         </a>
       </div>
-
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-7HV07LFK0N" />
-      <script>
-        {`window.dataLayer = window.dataLayer || [];
+      {process.env.NODE_ENV !== "development" && (
+        <>
+          <Script async src="https://www.googletagmanager.com/gtag/js?id=G-7HV07LFK0N" />
+          <script>
+            {`window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-7HV07LFK0N');`}
-      </script>
+          </script>
+        </>
+      )}
     </footer>
   )
 }
