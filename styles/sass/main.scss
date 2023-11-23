@@ -2,7 +2,12 @@
 @use "./components/social-icons";
 @use "gooey-menu.scss";
 @use "./components/prism-dracula";
-
+@use "./components/fancy-card";
+:root {
+  --demo-width: min(20em, 80vw);
+  --hue: 220;
+  --stroke-hue: 275;
+}
 body {
   background-color: var(--MainBackgroundColor);
   font-size: 16px;
