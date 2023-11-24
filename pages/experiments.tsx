@@ -1,14 +1,16 @@
+import { FancyCard } from "../components/fancy-card"
 import Layout from "../components/layout"
 
 const test = () => {
   return (
     <>
       <Layout>
-        <div className="fancy-card">
-          <div className="fancy-card-outer">
-            <div className="fancy-card-inner">drhdfghdfgh</div>
-          </div>
-        </div>
+        <FancyCard
+          padding="20px"
+          radius="10px"
+          outerBackgroundColor="hsl(275, 95%, 60%)"
+          innerBackgroundColor="hsl(220, 30%, 85%)"
+        />
       </Layout>
     </>
   )

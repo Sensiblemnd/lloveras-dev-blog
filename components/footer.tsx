@@ -39,13 +39,13 @@ const Footer = () => {
       </div>
       {process.env.NODE_ENV !== "development" && (
         <>
-          <Script async src="https://www.googletagmanager.com/gtag/js?id=G-7HV07LFK0N" />
+          <Script async src="https://www.googletagmanager.com/gtag/js?id=UA-140673-1" />
           <script>
             {`window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
 
-  gtag('config', 'G-7HV07LFK0N');`}
+              gtag('config', 'UA-140673-1');`}
           </script>
         </>
       )}
