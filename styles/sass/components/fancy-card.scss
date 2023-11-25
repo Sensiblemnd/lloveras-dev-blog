@@ -1,5 +1,6 @@
 .fancy-card {
   --padding: 16px;
+  --content-padding: 16px;
   --radius: 50px;
   --outer-background-color: hsl(275, 95%, 60%);
   --inner-background-color: hsl(220, 30%, 85%);
@@ -9,7 +10,7 @@
   color: black;
 
   &-content {
-    padding: calc(var(--padding) * 2);
+    padding: var(--content-padding);
     position: relative;
     z-index: 3;
   }
