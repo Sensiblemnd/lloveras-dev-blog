@@ -62,7 +62,9 @@ export const FancyCard = forwardRef(
         } as CSSProperties
       }
     >
-      <div className="fancy-card-content">{children}</div>
+      <div className="fancy-card-content">
+        <div className="fancy-card-wrapper">{children}</div>
+      </div>
     </div>
   )
 )

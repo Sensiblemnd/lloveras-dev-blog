@@ -2,30 +2,32 @@
   --padding: 16px;
   --content-padding: 16px;
   --radius: 50px;
-  --outer-background-color: hsl(275, 95%, 60%);
+  --outer-background-color: hsl(5.08deg 100% 65.29%);
   --inner-background-color: hsl(220, 30%, 85%);
   --animation-transition: 0.3s ease-in-out 0s;
   position: relative;
   z-index: 3;
   color: black;
+  width: fit-content;
 
   &-content {
     padding: var(--content-padding);
     position: relative;
     z-index: 3;
   }
+  &-wrapper {
+    overflow: hidden;
+    border-radius: calc(var(--radius) - var(--padding));
+  }
 
   &::before {
     background: var(--outer-background-color);
     border-radius: var(--radius);
     content: "";
-
     padding: var(--padding);
-
     position: absolute;
     top: 0;
     transition: all 0.3s ease-in-out 0s;
-
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -36,14 +38,11 @@
     border-radius: calc(var(--radius) - var(--padding));
     content: "";
     transition: all 0.3s ease-in-out 0s;
-
     height: calc(100% - var(--padding) * 2);
     width: calc(100% - var(--padding) * 2);
-
     position: absolute;
     left: var(--padding);
     bottom: var(--padding);
-
     z-index: 2;
   }
 }

@@ -1,0 +1,33 @@
+.indented-badge {
+  --main-color: hsl(5.08deg 100% 65.29%);
+  --text-color: hsl(0, 0%, 100%);
+  --secondary-color: hsl(220, 30%, 85%);
+  left: 4px;
+  top: 75%;
+  position: absolute;
+  color: black;
+  background-color: white;
+  aspect-ratio: 1/1;
+  margin-inline: auto;
+  padding-inline: 3%;
+  border-radius: 50%;
+  outline: 4px solid hsl(5.08, 100%, 65.29%);
+  // border: 6px solid hsl(5.08deg 100% 65.29%);
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+    z-index: 1;
+  }
+  & span {
+    z-index: 3;
+    position: relative;
+    border-radius: 50%;
+    display: block;
+  }
+}

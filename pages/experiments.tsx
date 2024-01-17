@@ -1,6 +1,8 @@
 import { FancyCard } from "../components/fancy-card"
 import Layout from "../components/layout"
 
+//img margin-inline:auto;aspect-ratio: 9/16;object-fit: cover;
+
 const experiments = () => {
   return (
     <>
@@ -10,38 +12,33 @@ const experiments = () => {
             padding: 12,
             radius: 25,
             contentPadding: 12,
-            outerBackgroundColor: "hsl(275, 95%, 60%)",
-            innerBackgroundColor: "hsl(220, 30%, 85%)",
+            outerBackgroundColor: "hsl(5.08deg 100% 65.29%)",
+            innerBackgroundColor: "hsl(0, 0%, 100%)",
+            styles: { aspectRatio: "16/9", maxWidth: "300px" },
           }}
           ref={null}
         >
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus molestias perferendis
-          culpa. Repudiandae labore mollitia sequi soluta, atque et illo! Aspernatur eveniet eius
-          non quam error exercitationem corrupti et quisquam. Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Minus molestias perferendis culpa. Repudiandae labore
-          mollitia sequi soluta, atque et illo! Aspernatur eveniet eius non quam error
-          exercitationem corrupti et quisquam. Lorem ipsum dolor sit amet consectetur, adipisicing
-          elit. Minus molestias perferendis culpa. Repudiandae labore mollitia sequi soluta, atque
-          et illo! Aspernatur eveniet eius non quam error exercitationem corrupti et quisquam. Lorem
-          ipsum dolor sit amet consectetur, adipisicing elit. Minus molestias perferendis culpa.
-          Repudiandae labore mollitia sequi soluta, atque et illo! Aspernatur eveniet eius non quam
-          error exercitationem corrupti et quisquam. Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Minus molestias perferendis culpa. Repudiandae labore mollitia sequi
-          soluta, atque et illo! Aspernatur eveniet eius non quam error exercitationem corrupti et
-          quisquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus molestias
-          perferendis culpa. Repudiandae labore mollitia sequi soluta, atque et illo! Aspernatur
-          eveniet eius non quam error exercitationem corrupti et quisquam. Lorem ipsum dolor sit
-          amet consectetur, adipisicing elit. Minus molestias perferendis culpa. Repudiandae labore
-          mollitia sequi soluta, atque et illo! Aspernatur eveniet eius non quam error
-          exercitationem corrupti et quisquam. Lorem ipsum dolor sit amet consectetur, adipisicing
-          elit. Minus molestias perferendis culpa. Repudiandae labore mollitia sequi soluta, atque
-          et illo! Aspernatur eveniet eius non quam error exercitationem corrupti et quisquam. Lorem
-          ipsum dolor sit amet consectetur, adipisicing elit. Minus molestias perferendis culpa.
-          Repudiandae labore mollitia sequi soluta, atque et illo! Aspernatur eveniet eius non quam
-          error exercitationem corrupti et quisquam. Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Minus molestias perferendis culpa. Repudiandae labore mollitia sequi
-          soluta, atque et illo! Aspernatur eveniet eius non quam error exercitationem corrupti et
-          quisquam.
+          <i className="indented-badge">
+            <span>3</span>
+          </i>
+          <picture className="block w-auto h-auto overflow-hidden">
+            <img
+              className="object-cover w-full h-auto"
+              style={{ marginInline: "auto", aspectRatio: "9/16" }}
+              key={"/img/img1.jpg"}
+              src={"/img/img1.jpg"}
+              alt={"/img/img1.jpg"}
+            />
+          </picture>
+          <div
+            className="block h-auto overflow-hidden"
+            style={{
+              WebkitBorderBottomLeftRadius: "calc(var(--radius) - var(--padding))",
+              borderBottomRightRadius: "calc(var(--radius) - var(--padding))",
+            }}
+          >
+            asdfasdfasdfasdfasdfasdf
+          </div>
         </FancyCard>
       </Layout>
     </>

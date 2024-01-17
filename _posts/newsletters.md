@@ -10,6 +10,10 @@ ogImage:
   url: "/270348.jpg"
 ---
 
+- <a href="https://sidebar.io/" target="_blank">sidebar.io</a>
+- <a href="https://heydesigner.com/" target="_blank">HeyDesigner</a>
+- <a href="https://vscode.email/archive" target="_blank">vscode.email</a>
+- <a href="https://clagnut.com/" target="_blank">An enthusiasm by Richard Rutter</a>
 - <a href="https://webtoolsweekly.com/archive" target="_blank">Tools for Web Developers</a>
 - <a href="https://css-tricks.com/newsletters/" target="_blank">Css Tricks newsletters</a>
 - <a href="https://frontendfoc.us/" target="_blank">Frontend Focus</a>

@@ -1,0 +1,70 @@
+.circle {
+  background: #000;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 1px solid solid;
+  position: relative;
+  counter-reset: css-counter 0; /* initializes counter to 0; use -1 for zero-based numbering */
+}
+.line {
+  height: 2px;
+  width: 400px;
+  background: #fff;
+  position: absolute;
+  top: 49%;
+  counter-increment: css-counter 1; /* Increase the counter by 1. */
+}
+.index-2 {
+  transform: rotate(22deg);
+}
+.index-3 {
+  transform: rotate(44deg);
+}
+.index-4 {
+  transform: rotate(67deg);
+}
+.index-5 {
+  transform: rotate(90deg);
+}
+.index-6 {
+  transform: rotate(112deg);
+}
+.index-7 {
+  transform: rotate(135deg);
+}
+.index-8 {
+  transform: rotate(157deg);
+}
+
+.line::after {
+  z-index: 1;
+  top: -6px;
+  left: 1px;
+  width: 15px;
+  height: 15px;
+  content: "";
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  content: counter(css-counter) ". "; /* Apply counter before children's content. */
+}
+
+.line::before {
+  z-index: 2;
+  bottom: -6px;
+  right: 1px;
+  width: 15px;
+  height: 15px;
+  content: "";
+  background: red;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  content: counter(css-counter) ""; /* Apply counter before children's content. */
+}
+
+.line.index-2::after {
+  /*animation-name: move;*/
+  animation-delay: 1.25s;
+}

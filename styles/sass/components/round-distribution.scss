@@ -1,0 +1,42 @@
+$d: 56.5px;
+
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  //background-color: #ffffff;
+}
+.round-wrapper {
+  position: relative;
+  width: 224px;
+  height: 224px;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #47d7bd;
+}
+
+.round-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -0.05 * $d;
+  width: 5px;
+  height: 5px;
+  z-index: 1;
+  border-radius: 50%;
+  --az: calc(var(--i) * 1turn / var(--n));
+  transform: rotate(var(--az)) translate(2 * $d) rotate(calc(-1 * var(--az)));
+  background-color: #47d7bd;
+  font: 2em/ 2 trebuchet ms, sans-serif;
+  text-align: center;
+  counter-reset: i var(--i);
+  border: 1px solid #fff;
+
+  &::before {
+    content: "";
+  }
+}

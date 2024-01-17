@@ -3,6 +3,10 @@
 @use "gooey-menu.scss";
 @use "./components/prism-dracula";
 @use "./components/fancy-card";
+@use "./components/indented-badge.scss";
+@use "./components/round-distribution.scss";
+@use "./components/circle-dots.scss";
+
 :root {
   --demo-width: min(20em, 80vw);
   --hue: 220;
