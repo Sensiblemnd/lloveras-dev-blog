@@ -13,7 +13,8 @@
     "start": "next start",
     "typecheck": "tsc",
     "lint": "next lint",
-    "export": "next build  && next export"
+    "export": "next build  && next export",
+    "prepare": "husky install"
   },
   "dependencies": {
     "-": "^0.0.1",
@@ -44,6 +45,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-next": "^0.0.0",
+    "husky": "^8.0.3",
     "postcss": "^8.4.23",
     "prettier": "^2.8.8",
     "sass": "^1.62.1",
