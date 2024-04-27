@@ -43,7 +43,6 @@
   left: 1px;
   width: 15px;
   height: 15px;
-  content: "";
   background: #fff;
   border-radius: 50%;
   position: absolute;
@@ -56,8 +55,7 @@
   right: 1px;
   width: 15px;
   height: 15px;
-  content: "";
-  background: red;
+  background: rgb(1, 181, 7);
   color: white;
   border-radius: 50%;
   position: absolute;

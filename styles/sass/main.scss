@@ -6,6 +6,8 @@
 @use "./components/indented-badge.scss";
 @use "./components/round-distribution.scss";
 @use "./components/circle-dots.scss";
+@use "./components/card-hover.scss";
+@use "./components/kpi-item.scss";
 
 :root {
   --demo-width: min(20em, 80vw);

@@ -1,8 +1,6 @@
 import { CSSProperties } from "react"
 import Layout from "../components/layout"
-
-//img margin-inline:auto;aspect-ratio: 9/16;object-fit: cover;
-
+// css file is circle-dots.css
 const experimentRound = () => {
   return (
     <>
