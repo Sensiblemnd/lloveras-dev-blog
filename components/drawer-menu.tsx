@@ -5,19 +5,19 @@ export const DrawerMenu = () => {
     <>
       <li className="pt-2 pb-2 pl-4 text-xl lg:text-[1rem]">
         <Link href="/">
-          <a className="text-shadow">Home</a>
+          <span className="text-shadow">Home</span>
         </Link>
       </li>
 
       <li className="pt-2 pb-2 pl-4 text-xl lg:text-[1rem]">
         <Link href="/gooey-menu">
-          <a className="text-shadow">Gooey Menu </a>
+          <span className="text-shadow">Gooey Menu </span>
         </Link>
       </li>
 
       <li className="pt-2 pb-2 pl-4 text-xl lg:text-[1rem]">
         <Link href="/codepen">
-          <a className="text-shadow">Codepen Experiments</a>
+          <span className="text-shadow">Codepen Experiments</span>
         </Link>
       </li>
     </>

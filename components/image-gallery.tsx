@@ -16,12 +16,7 @@ export const ImageGallery = ({ images }: ImageGalleryProps) => {
               key={`${image.imageUrl}-${image.linkUrl} `}
             >
               <Link key={`${image.imageUrl}-${image.linkUrl} `} href={image.linkUrl ?? ""}>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="link-item"
-                  title={image.altText}
-                >
+                <span rel="noopener noreferrer" className="link-item" title={image.altText}>
                   <picture>
                     <img
                       key={image.imageUrl}
@@ -30,7 +25,7 @@ export const ImageGallery = ({ images }: ImageGalleryProps) => {
                       className={`w-[${image?.imageWidth}px]  h-[${image?.imageHeight}px]`}
                     />
                   </picture>
-                </a>
+                </span>
               </Link>
             </div>
           )

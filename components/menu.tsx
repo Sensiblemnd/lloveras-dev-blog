@@ -44,19 +44,19 @@ export const Menu = ({ setIsOpen, isOpen }: MenuProps) => {
       <ul className="flex flex-row hidden gap-4 py-4 lg:flex md:flex ">
         <Li>
           <Link href="/">
-            <a className="text-shadow">Home</a>
+            <span className="text-shadow">Home</span>
           </Link>
         </Li>
 
         <Li>
           <Link href="/gooey-menu">
-            <a className="text-shadow">Gooey Menu </a>
+            <span className="text-shadow">Gooey Menu </span>
           </Link>
         </Li>
 
         <Li>
           <Link href="/codepen">
-            <a className="text-shadow">Codepen Experiments</a>
+            <span className="text-shadow">Codepen Experiments</span>
           </Link>
         </Li>
       </ul>

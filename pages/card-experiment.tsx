@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 
 //img margin-inline:auto;aspect-ratio: 9/16;object-fit: cover;
 
-const experiments = () => {
+const CardExperiment = () => {
   return (
     <>
       <Layout>
@@ -37,7 +37,9 @@ const experiments = () => {
               borderBottomRightRadius: "calc(var(--radius) - var(--padding))",
             }}
           >
-            asdfasdfasdfasdfasdfasdf
+            <p className="pb-4 pl-4 pr-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            </p>
           </div>
         </FancyCard>
       </Layout>
@@ -45,4 +47,4 @@ const experiments = () => {
   )
 }
 
-export default experiments
+export default CardExperiment

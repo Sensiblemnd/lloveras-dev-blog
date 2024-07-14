@@ -3,10 +3,6 @@ import CodePenIframe from "../components/codepen-iframe"
 import Layout from "../components/layout"
 import { CODEPENIDS } from "../lib/constants"
 
-// const DynamicCodePenIframe = dynamic(() => import("../components/codepen-iframe"), {
-//   ssr: false,
-// })
-
 const CodePen = () => {
   return (
     <>

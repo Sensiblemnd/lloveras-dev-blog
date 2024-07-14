@@ -19,7 +19,7 @@ const HeroPost = ({ title, coverImage, date, excerpt, author, slug }: Props) => 
       <div className=" lg:col-span-5">
         <h3 className="mb-4 text-3xl font-bold leading-tight ">
           <Link as={`/posts/${slug}`} href="/posts/[slug]">
-            <a className="hover:underline">{title}</a>
+            <span className="hover:underline">{title}</span>
           </Link>
         </h3>
         <div className="">

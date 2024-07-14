@@ -1,5 +1,6 @@
 import "@/styles/globals.css"
 import "@/styles/sass/main.scss"
+
 import { Analytics } from "@vercel/analytics/react"
 import { LayoutGroup } from "framer-motion"
 import Script from "next/script"
