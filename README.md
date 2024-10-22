@@ -22,4 +22,4 @@ License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 Contact
-You can contact me via email at sensiblemnd@gmail.com or on Twitter @sensiblemnd.
+You can contact me via email at sensiblemnd@gmail.com
