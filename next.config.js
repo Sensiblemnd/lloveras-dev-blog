@@ -12,4 +12,14 @@ module.exports = {
   eslint: {
     dirs: ["pages", "utils", "components", "interfaces", "lib"], // Only run ESLint on the 'pages' and 'utils' directories during production builds (next build)
   },
+
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "placehold.co",
+        port: "",
+      },
+    ],
+  },
 }
