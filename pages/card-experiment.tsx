@@ -1,14 +1,50 @@
+import Link from "next/link"
+import { useState } from "react"
 import { FancyCard } from "../components/fancy-card"
 import Layout from "../components/layout"
 
 //img margin-inline:auto;aspect-ratio: 9/16;object-fit: cover;
 const CardExperiment = () => {
+  const [padding, setPadding] = useState(12)
+  const [radius, setRadius] = useState(25)
   return (
     <Layout>
+      <div className="mb-10">
+        Based on an article I read:{" "}
+        <Link
+          className="text-blue-500"
+          target="_blank"
+          href={"https://cloudfour.com/thinks/the-math-behind-nesting-rounded-corners/"}
+        >
+          The Math Behind Nesting Rounded Corners
+        </Link>
+      </div>
+      <div className="flex items-center justify-center space-x-4">
+        <label>
+          Gap
+          <input
+            type="range"
+            min="0"
+            max="50"
+            value={padding}
+            onChange={(e) => setPadding(parseInt(e.target.value))}
+          />
+        </label>
+        <label>
+          Outer Border Radius
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value={radius}
+            onChange={(e) => setRadius(parseInt(e.target.value))}
+          />
+        </label>
+      </div>
       <FancyCard
         options={{
-          padding: 12,
-          radius: 25,
+          padding: padding,
+          radius: radius,
           contentPadding: 12,
           outerBackgroundColor: "hsl(5.08deg 100% 65.29%)",
           innerBackgroundColor: "hsl(0, 0%, 100%)",
@@ -27,17 +63,6 @@ const CardExperiment = () => {
             alt={"/img/img1.jpg"}
           />
         </picture>
-        <div
-          className="block h-auto overflow-hidden"
-          style={{
-            WebkitBorderBottomLeftRadius: "calc(var(--radius) - var(--padding))",
-            borderBottomRightRadius: "calc(var(--radius) - var(--padding))",
-          }}
-        >
-          <p className="pb-4 pl-4 pr-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          </p>
-        </div>
       </FancyCard>
     </Layout>
   )

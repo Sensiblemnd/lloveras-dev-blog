@@ -20,6 +20,11 @@ export const DrawerMenu = () => {
           <span className="text-shadow">Codepen Experiments</span>
         </Link>
       </li>
+      <li className="pt-2 pb-2 pl-4 text-xl lg:text-[1rem]">
+        <Link href="card-experiment/">
+          <span className="text-shadow">Card Experiments</span>
+        </Link>
+      </li>
     </>
   )
 }
