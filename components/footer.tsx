@@ -1,21 +1,21 @@
 "use client"
 
+import { BlueSkyIcon } from "./icons/blue-sku-icon"
 import { GithubIcon } from "./icons/github"
 import { LinkedinIcon } from "./icons/linkedin"
-import { TwitterIcon } from "./icons/twitter"
 
 const Footer = () => {
   return (
     <footer className="p-10 footer bg-neutral text-neutral-content">
       <div className="grid-flow-col gap-4 social-icons">
         <a
-          href="https://twitter.com/robll/"
-          className="genericon genericon-twitter"
+          href="https://bsky.app/profile/lloveras.info"
+          className="genericon genericon-linkedin"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <TwitterIcon />
-          <span className="sr-only">View robll’s profile on Twitter</span>
+          <BlueSkyIcon />
+          <span className="sr-only">View Rob Lloveras profile on LinkedIn</span>
         </a>
 
         <a

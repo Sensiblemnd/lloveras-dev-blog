@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "lib": ["es6", "es2017", "esnext.asynciterable", "DOM", "esnext", "dom.iterable"],
+    "target": "ESNext",
+    "lib": ["es6", "es2017", "esnext.asynciterable", "DOM", "ESNext", "dom.iterable"],
     "sourceMap": true,
     "outDir": "./dist",
     "declaration": false,

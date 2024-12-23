@@ -3,7 +3,6 @@ import { useState } from "react"
 import { FancyCard } from "../components/fancy-card"
 import Layout from "../components/layout"
 
-//img margin-inline:auto;aspect-ratio: 9/16;object-fit: cover;
 const CardExperiment = () => {
   const [padding, setPadding] = useState(12)
   const [radius, setRadius] = useState(25)
