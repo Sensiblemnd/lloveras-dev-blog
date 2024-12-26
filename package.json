@@ -4,9 +4,6 @@
   "version": "1.0.0",
   "description": "My Blog for all css,html,react,js things",
   "private": true,
-  "engines": {
-    "node": "18.x"
-  },
   "scripts": {
     "dev": "next",
     "build": "next build",

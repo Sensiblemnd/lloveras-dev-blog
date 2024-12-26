@@ -8,7 +8,11 @@ export const DrawerMenu = () => {
           <span className="text-shadow">Home</span>
         </Link>
       </li>
-
+      <li className="pt-2 pb-2 pl-4 text-xl lg:text-[1rem]">
+        <Link href="/vscode-extensions">
+          <span className="text-shadow">Useful Vscode extensions</span>
+        </Link>
+      </li>
       <li className="pt-2 pb-2 pl-4 text-xl lg:text-[1rem]">
         <Link href="/gooey-menu">
           <span className="text-shadow">Gooey Menu </span>
