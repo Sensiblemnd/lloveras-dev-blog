@@ -8,10 +8,11 @@ import Meta from "./meta"
 
 type Props = {
   preview?: boolean
+  pageTitle?: string
   children: React.ReactNode
 }
 
-const Layout = ({ children }: Props) => {
+const Layout = ({ pageTitle = "", children }: Props) => {
   const blogTitle = ` ${CMS_NAME}`
 
   return (
@@ -27,7 +28,7 @@ const Layout = ({ children }: Props) => {
         >
           <main>
             <Head>
-              <title>{blogTitle}</title>
+              <title>{`${blogTitle} ${pageTitle}`}</title>
             </Head>
             <Container>
               <Drawer />

@@ -17,7 +17,7 @@ const sortedByTitle = vscodeMetaData.sort((a, b) => {
 const VscodeExtension = () => {
   return (
     <>
-      <Layout>
+      <Layout pageTitle="VSCode Extensions">
         <div>
           {sortedByTitle.map((data, index) => (
             <div
