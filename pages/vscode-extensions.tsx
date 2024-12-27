@@ -22,14 +22,14 @@ const VscodeExtension = () => {
           {sortedByTitle.map((data, index) => (
             <div
               key={index}
-              className="grid grid-cols-[auto_1fr] gap-4 p-4 m-4 overflow-hidden bg-white rounded-lg shadow-md "
+              className="grid grid-cols-[90px_1fr] gap-4 p-4 m-4 overflow-hidden bg-white rounded-lg shadow-md "
             >
               {data?.image && (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
                   src={data?.image ?? ""}
                   alt={data?.title ?? ""}
-                  className="object-contain w-full h-auto max-h-48"
+                  className="object-contain w-full h-auto p-4 bg-gray-300 border rounded-md border-gray-950 max-h-48"
                 />
               )}
               <div className="p-4">
