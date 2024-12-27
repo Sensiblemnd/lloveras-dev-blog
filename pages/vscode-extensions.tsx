@@ -18,7 +18,7 @@ const VscodeExtension = () => {
   return (
     <>
       <Layout pageTitle="VSCode Extensions">
-        <div>
+        <div className="grid grid-cols-auto-fill-500">
           {sortedByTitle.map((data, index) => (
             <div
               key={index}

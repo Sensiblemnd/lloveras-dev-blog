@@ -2,6 +2,10 @@ module.exports = {
   content: ["./common/**/*.{js,ts,jsx,tsx,mdx}", "./components/**/*.tsx", "./pages/**/*.tsx"],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        "auto-fill-500": "repeat(auto-fill, minmax(500px, 1fr))",
+        "auto-fit-500": "repeat(auto-fit, minmax(500px, 1fr))",
+      },
       colors: {
         "accent-1": "#FAFAFA",
         "accent-2": "#EAEAEA",
