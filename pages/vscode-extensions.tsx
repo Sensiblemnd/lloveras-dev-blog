@@ -1,3 +1,4 @@
+import classNames from "classnames"
 import { vscodeMetaData } from "../common/vscode-ext"
 import Layout from "../components/layout"
 
@@ -22,7 +23,11 @@ const VscodeExtension = () => {
           {sortedByTitle.map((data, index) => (
             <div
               key={index}
-              className="grid grid-cols-[90px_1fr] gap-4 p-4 m-4 overflow-hidden bg-white rounded-lg shadow-md "
+              className={classNames(
+                "grid gap-4 p-4 m-4 overflow-hidden bg-white rounded-lg shadow-md ",
+                { "grid-cols-[90px_1fr] ": data?.image },
+                { "grid-cols-1 ": !data?.image }
+              )}
             >
               {data?.image && (
                 // eslint-disable-next-line @next/next/no-img-element
