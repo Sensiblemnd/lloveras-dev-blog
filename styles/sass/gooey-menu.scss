@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
 
 $menu-items: 5;
@@ -7,7 +9,7 @@ $indicator-color: #fff;
 
 $transition-speed: 0.5s;
 
-$height: (100 / $menu-items) * 1%;
+$height: math.div(100, $menu-items) * 1%;
 $menu-items-loop-offset: $menu-items - 1;
 
 $icon-default-color: #121212;
@@ -96,7 +98,7 @@ $nav-indicator-border-color: #924382;
       }
       // Making the top CSS Triangle - learn more: https://css-tricks.com/animation-css-triangles-work/
       &::before {
-        top: ($height/2);
+        top: math.div($height, 2);
         margin-left: -3px;
         background-color: $nav-indicator-border-color;
         right: 0;
@@ -109,7 +111,7 @@ $nav-indicator-border-color: #924382;
       }
 
       &::after {
-        top: ($height/2);
+        top: math.div($height, 2);
         margin-left: -3px;
         background-color: #924382;
         right: -7px;
@@ -126,14 +128,14 @@ $nav-indicator-border-color: #924382;
   @for $i from 1 through $menu-items-loop-offset {
     .menu-item:nth-child(#{$i}).is-active ~ .menu-item:last-child:after,
     .menu-item:nth-child(#{$i}).is-active ~ .menu-item:last-child:before {
-      top: ($height * $i) + ($height/2)-$height;
+      top: ($height * $i) + math.div($height, 2)-$height;
     }
   }
 
   @for $i from 1 through $menu-items-loop-offset {
     .menu-item:nth-child(#{$i}):hover ~ .menu-item:last-child:after,
     .menu-item:nth-child(#{$i}):hover ~ .menu-item:last-child:before {
-      top: ($height * $i) + ($height/2)-$height !important;
+      top: ($height * $i) + math.div($height, 2)-$height !important;
     }
   }
 
@@ -143,7 +145,7 @@ $nav-indicator-border-color: #924382;
       &.is-active {
         &::before,
         &::after {
-          top: (100% - $height) + ($height/2) !important;
+          top: (100% - $height) + math.div($height, 2) !important;
         }
       }
     }
