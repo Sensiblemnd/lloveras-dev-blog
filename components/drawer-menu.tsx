@@ -9,6 +9,11 @@ export const DrawerMenu = () => {
         </Link>
       </li>
       <li className="pt-2 pb-2 pl-4 text-xl lg:text-[1rem]">
+        <Link href="/bluesky-profile">
+          <span className="text-shadow">Latest Bsky Posts</span>
+        </Link>
+      </li>
+      <li className="pt-2 pb-2 pl-4 text-xl lg:text-[1rem]">
         <Link href="/vscode-extensions">
           <span className="text-shadow">Useful Vscode extensions</span>
         </Link>

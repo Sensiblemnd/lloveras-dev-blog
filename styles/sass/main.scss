@@ -52,3 +52,16 @@ header {
   width: 100%;
   object-fit: cover;
 }
+
+.masonry {
+  margin: 20px 0;
+  box-sizing: border-box;
+  columns: 2 150px;
+  > div {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .masonry-item + .masonry-item {
+    margin-top: 20px;
+  }
+}

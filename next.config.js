@@ -2,8 +2,8 @@
 const path = require("path")
 
 module.exports = {
+  transpilePackages: ["react-bluesky-embed"],
   reactStrictMode: true,
-
   trailingSlash: true,
   sassOptions: {
     includePaths: [path.join(__dirname, "styles/sass")],
