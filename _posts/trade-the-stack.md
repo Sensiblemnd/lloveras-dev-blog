@@ -11,7 +11,7 @@ ogImage:
 imageGallery:
   [
     {
-      imageUrl: "/trade-the-stack.png",
+      imageUrl: "/share-stack.png",
       linkUrl: "https://www.sharemydevstack.dev/",
       altText: "Trade The Stack",
       imageWidth: "216",
