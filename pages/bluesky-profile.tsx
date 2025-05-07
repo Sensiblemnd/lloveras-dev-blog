@@ -6,7 +6,6 @@ import { agent } from "../lib/bsky"
 
 const BlueskyProfile = () => {
   const [feeds, setFeeds] = useState<FeedViewPost[] | null>(null)
-  const [loading, setLoading] = useState(false)
 
   const getRkey = (uri: string) => {
     const parts = uri.split("/")
@@ -17,8 +16,6 @@ const BlueskyProfile = () => {
   useEffect(() => {
     async function fetchFeeds() {
       try {
-        setLoading(true)
-
         const response = await agent.getAuthorFeed({
           actor: "lloveras.info",
           includePins: false,
@@ -37,8 +34,6 @@ const BlueskyProfile = () => {
         }
       } catch (error) {
         console.error("Error fetching feeds:", error)
-      } finally {
-        setLoading(false)
       }
     }
 
