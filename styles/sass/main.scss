@@ -53,14 +53,27 @@ header {
   object-fit: cover;
 }
 
+.masonry-container {
+  container: masonry-container / inline-size;
+}
+
 .masonry {
   margin: 20px 0;
   box-sizing: border-box;
   columns: 2 150px;
+
+  @container masonry-container (inline-size < 600px) {
+    columns: 1 150px;
+  }
+  @container masonry-container (inline-size > 1000px) {
+    columns: 3 150px;
+  }
+
   > div {
     page-break-inside: avoid;
     break-inside: avoid;
   }
+
   .masonry-item + .masonry-item {
     margin-top: 20px;
   }

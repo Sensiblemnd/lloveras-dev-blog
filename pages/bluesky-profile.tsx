@@ -43,7 +43,7 @@ const BlueskyProfile = () => {
   return (
     <Layout>
       <Suspense fallback={<div>Loading...</div>}>
-        <div className="container mx-auto">
+        <div className="container mx-auto masonry-container">
           <h1 className="my-4 text-xl font-bold">Top Feeds</h1>
           {
             <div className="masonry">
