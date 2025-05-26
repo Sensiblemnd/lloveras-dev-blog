@@ -1,7 +1,7 @@
 ---
 title: "Share my dev stack"
 excerpt: "Share my dev stack is a platform for developers to discover tools and technologies for building software."
-coverImage: "/trade-the-stack.png"
+coverImage: "/share-stack.png"
 date: "2025-04-22 20:19:59"
 author:
   name: Rob Lloveras
